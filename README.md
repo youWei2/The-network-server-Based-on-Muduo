@@ -90,7 +90,7 @@ private:
 int main()
 {
     EventLoop loop;
-    InetAddress addr("127.0.0.1", 8888);
+    InetAddress addr("127.0.0.1", 8000);
     MuduoServer server(&loop, addr, "EchoServer-01");
     server.start();
     loop.loop();
@@ -100,8 +100,10 @@ int main()
 ```
 ### MuduoServer的使用
 进入example/Muduo_server目录
+```
 cmake .
 make
+```
 ### 客户端的使用
 客户端是利用QT设计的一个简单页面，直接在QT中打开运行即可。
 在本项目中，暂时没有信息编解码部分，所以只是相当于echo命令。
