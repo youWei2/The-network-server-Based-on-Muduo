@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/wei/Project/Mymuduo/example/Muduo_server/MuduoServer.cc
+mymuduo/TcpServer.h
+-
+mymuduo/AsyncLogging.h
+-
+mymuduo/Logger.h
+-
+mymuduo/Buffer.h
+-
+string
+-
+iostream
+-
+
