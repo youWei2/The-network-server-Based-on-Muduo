@@ -6,6 +6,7 @@
 * 只实现了epoll这一个IO-Multiplexing,没有实现poll/select
 * 异步日志模块前端不同与原作者的C++风格，是格式化字符串（fmt）风格，前后端异步日志写入使用陈硕老师双缓冲区的思想实现。由于只用于学习，不支持日志滚动功能
 * Buffer部分Muduo库没有提供writeFd方法，本项目加入了writeFd，在处理outputBuffer剩余未发数据时交给Buffer来处理
+该项目的目的主要是为了巩固C++，熟悉C++的编程特点。
 
 ### 安装使用
 进入项目根目录，创建build文件夹进行编译
